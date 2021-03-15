@@ -1,0 +1,86 @@
+Q1:
+	. 31 41 53 93 . 26 97 58 59
+
+Q2:
+	. 41 31 93 53 . 26 97 58 59
+
+Q3:
+	2, 3, 4, 5
+
+Q4:
+	7, 8, 9, 0
+
+Q5:
+	. 31 T T 93 . 26 97 58 59
+
+Q6:
+	106 31 107 110 93 . 26 97 58 59
+
+Q7:
+	108 151 221 103 . 145 245 246 106 107
+	 2   0   1   0  -  0   1   1   2   2
+
+Q8:
+	108 221 151 103 . 245 145 246 106 107
+	 2   0   1   0  -  0   1   1   2   2
+
+Q9:
+	5, 6, 7
+
+Q10:
+	0, 1
+
+Q11:
+	108 221 . 103 . 145 245 246 106 107
+	 2   0  -  0  -  0   1   1   2   2
+
+Q12:
+	. 221 . 103 . 245 246 106 107 108
+	-  0  -  0  -  0   0   1   1   1 
+
+Q13:
+	Successful insertion is way slower than failed ones! This is because successful insertion means ensuring it will not fail and insert. This process takes approximately twice the amount of time of failure. The trend is similiar in Removal because you have to check whether the removal will fail then do the removal. For lookup, the differece is relatively small because they are basically one-pass look up. Successful lookup is slightly faster because the search stops before it reaches the end.
+
+Q14:
+	Successful Insertion is always a bit slower than failed ones. However, for Lookup and Removal, as load factors grow, failure becomes way slower than success. Because in linear probing successful lookup and removal don't stop at Tombstone while insertion does.
+
+
+Q15:
+	For three different operations, success all tend to be slightly slower with small load factor. Because they are all basically one-pass iteration across the array. Failure is slightly faster because they can stop ealier. As load factor grow, the difference grows dramatically for insertion and removal! Because as the arrary gets largers, each time a successful insertion or removal requires repositioning a lot of cells!
+
+
+
+Q16:
+	Insert(success): Linear Probing
+	Becasue in this case, robinhood may involves a lot of swaping node/repositions nodes.
+	
+	Insert(failure): Robinhood
+	Because robinhood's distance feature allows us to stop looking earlier
+
+	Lookup(success): Similar?
+
+
+	Lookup(failure): Robinhood
+	Because robinhood's distance feature allows us to stop looking earlier	
+	
+	Remove(success): Linear Probing
+	Because Remove in linear probing doesn't involve backwards-shift!
+	
+	Remove(failure): Robinhood
+	This is similar with why robinhood is faster in Lookup(failure).
+
+
+
+Q17:
+	No, too much space taken!
+
+
+
+
+Q18:
+	Robinhood, 0.5
+	According to my time test, this is fairly fast and it doesn't take up too much space. At most it takes up twice the space of its elements.
+
+
+
+

@@ -1,0 +1,40 @@
+The big-O time complexity of the function...
+
+... iterativePrinting is O(_n^2_),
+    and I know this because as n gets larger,
+    if you double the size of n, the runtime becomes 4 times larger. When n gets larger, 
+    n % 1000 is true more frequently, so the function's behavior is more similar to twp nested for loop
+
+
+
+
+
+... iterativePQ is O(_n^2_),
+    and I know this because as n gets larger, enqueue part of this function takes O(n^2), but the dequeue part is always O(nlogn), so overall it's O(n^2)
+
+
+
+
+
+... iterativeHashSet is O(_n_),
+    and I know this because add/remove/search in hashSet/hashMap takes O(1), so n operations take O(n)
+
+
+
+
+
+... iterativeLooping is O(_1_),
+    and I know this because each time i is divied by 2 so i is very quickly reduced to 1. When n is large enough, reducing i to i seems to take no time at all!
+
+
+
+
+
+... iterativeVector is O(_n^2 * logn_),
+    and I know this because sorting takes O(n*logn) time and the function does n times of sorting, so the runtime is n * n * logn
+
+
+
+
+
+

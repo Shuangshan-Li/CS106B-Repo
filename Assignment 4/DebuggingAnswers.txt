@@ -1,0 +1,40 @@
+Put your answers to the debugging questions from Problem One in this file.
+
+Q1: 
+	numDisks - 5
+	start - 'A'
+	finish - 'C'
+	temp - 'B'
+
+Q2:
+	file - TowersOfHanoiGUI.cpp
+	function - makeTheMagicHappen
+
+Q3:
+	totalMoves - 31
+
+Q4:
+	totalMoves - 15
+
+Q5:
+	smallest - "ab"
+
+Q6:
+	in line 41, there is a naughty "=" ---> "chosen += ch" should be "chosen + ch"
+
+Q7:
+	Since in this function parameters are pass by reference, they can be changed!
+	"chosen += ch" makes changes to chosen! In "ab" example, it put a in it so it stays
+	as "a", when ch becomes 'b', what I want is passing "b" as chosen, but chosen already has
+	"a" in it, so "ab" becomes chosen when remaining is "a", following this logic, I will get "aba" in stead of "ba"!
+
+
+
+****************************************************************************************************************************************************
+	
+														    ab
+			  											  /   \
+					forgot to "unmark" 'a' so at the end of 'b' branch, I get "aba"-->		a	b
+			                                                    					|      |
+                                                                 							b	 a
+					
